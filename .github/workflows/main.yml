@@ -19,5 +19,5 @@ jobs:
           aws-region: ap-south-1
 
       - name: Deploying Website
-        run: aws s3 sync ./public/ s3://devops-cicddemo --delete
+        run: aws s3 sync . s3://devops-cicddemo --delete
 
