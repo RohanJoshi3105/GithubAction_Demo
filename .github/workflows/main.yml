@@ -1,11 +1,11 @@
-name:GitHub Action Deployment Process
+name: GitHub Action Deployment Process
 on:
   push:
       branches:
       - main
 jobs:
   build-and-deploy:
-    runs-on: ununtu-latest
+    runs-on: unbuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v1
