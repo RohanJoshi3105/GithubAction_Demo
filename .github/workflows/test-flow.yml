@@ -1,8 +1,7 @@
 name: scan
 on:
-  repository_dispatch:
-    types: [run-flow]
-    inputs:
+  workflow_dispatch:
+     inputs:
         P_ID:
           description: 'P_ID'
           required: false
