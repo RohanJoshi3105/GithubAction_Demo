@@ -32,5 +32,5 @@ jobs:
           echo "Project ID: $P_ID"
           echo "Project Key: $P_KEY"
           echo "Project Address: $P_ADD"
-          echo "$P_ID" "P_KEY" "P_ADD"
+          echo "$P_ID" "$P_KEY" "$P_ADD"
           
