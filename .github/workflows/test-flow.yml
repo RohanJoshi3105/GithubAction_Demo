@@ -23,9 +23,9 @@ jobs:
 
       - name: Set Parameters
         run: |
-          echo "P_ID=${{ github.event.inputs.p_id }}" 
-          echo "P_KEY=${{ github.event.inputs.p_key }}"
-          echo "P_ADD=${{ github.event.inputs.p_add }}"
+         echo "P_ID=${{ github.event.inputs.p_id }}" >> $GITHUB_ENV
+          echo "P_KEY=${{ github.event.inputs.p_key }}" >> $GITHUB_ENV
+          echo "P_ADD=${{ github.event.inputs.p_add }}" >> $GITHUB_ENV
 
       - name: Print Parameters
         run: |
