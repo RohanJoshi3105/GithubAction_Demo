@@ -5,12 +5,15 @@ on:
         P_ID:
           description: 'P_ID'
           required: false
+          default: ''
         P_KEY:
           description: 'P_KEY'
           required: false
+          default: ''
         P_ADD:
           description: 'P_ADD'
           required: false
+          default: ''
          
  
 jobs:
