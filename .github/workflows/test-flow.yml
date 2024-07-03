@@ -1,0 +1,39 @@
+name: scan
+on:
+  repository_dispatch:
+    types: [run-flow]
+    inputs:
+        P_ID:
+          description: 'P_ID'
+          required: false
+          default: ''
+        P_KEY:
+          description: 'P_KEY'
+          required: false
+          default: ''
+        P_ADD:
+          description: 'P_ADD'
+          required: false
+          default: ''
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set Parameters
+        run: |
+          echo "P_ID=${{ github.event.inputs.p_id }}" 
+          echo "P_KEY=${{ github.event.inputs.p_key }}"
+          echo "P_ADD=${{ github.event.inputs.p_add }}"
+
+      - name: Print Parameters
+        run: |
+          echo "Project ID: $P_ID"
+          echo "Project Key: $P_KEY"
+          echo "Project Address: $P_ADD"
+          
