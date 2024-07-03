@@ -1,6 +1,6 @@
 name: scan
 on:
-  repository_dispatch:
+  workflow_dispatch:
      inputs:
         P_ID:
           description: 'P_ID'
